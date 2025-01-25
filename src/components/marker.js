@@ -66,7 +66,7 @@ function getPosition({props, state, context}) {
  * is almost always triggered by a viewport change, we almost definitely need to
  * recalculate the marker's position when the parent re-renders.
  */
-function Marker(props) {
+function Marker(props = defaultProps) {
   const thisRef = useDraggableControl(props);
   const {state, containerRef} = thisRef;
 
@@ -108,7 +108,8 @@ function Marker(props) {
   return control;
 }
 
-Marker.defaultProps = defaultProps;
+// defaultProps is removed from React 19, use JS default parameters instead
+// Marker.defaultProps = defaultProps;
 Marker.propTypes = propTypes;
 
 export default React.memo(Marker);
