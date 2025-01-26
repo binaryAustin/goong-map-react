@@ -34,6 +34,7 @@ declare export { default as _useMapControl } from "./components/use-map-control"
 declare export { default as _MapContext } from "./components/map-context";
 declare export { MapEvent } from "./components/interactive-map";
 declare export { ViewportProps } from "./utils/map-state";
+declare export { ViewState } from "./goong/goong";
 declare export { MapContextProps } from "./components/map-context";
 declare export { MapRef } from "./components/static-map";
 declare export { SourceProps } from "./components/source";

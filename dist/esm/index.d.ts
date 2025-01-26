@@ -60,13 +60,14 @@ export {default as _useMapControl} from './components/use-map-control';
 export {default as _MapContext} from './components/map-context';
 
 // Types
-export {MapEvent} from './components/interactive-map'
+export {MapEvent} from './components/interactive-map';
 export {ViewportProps} from './utils/map-state';
+export {ViewState} from './goong/goong';
 export {MapContextProps} from './components/map-context';
 export {MapRef} from './components/static-map';
 export {SourceProps} from './components/source';
-export {LayerProps} from './components/layer'
-export {MarkerProps} from './components/marker'
-export {AttributionControlProps} from './components/attribution-control'
-export {FullscreenControlProps} from './components/fullscreen-control'
-export {PopupProps} from './components/popup'
+export {LayerProps} from './components/layer';
+export {MarkerProps} from './components/marker';
+export {AttributionControlProps} from './components/attribution-control';
+export {FullscreenControlProps} from './components/fullscreen-control';
+export {PopupProps} from './components/popup';
