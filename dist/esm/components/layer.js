@@ -109,7 +109,7 @@ function Layer(props) {
       map.on('styledata', forceUpdate);
       return function () {
         map.off('styledata', forceUpdate);
-        if (map.style && map.style._loaded) {
+        if (map.style && map.style._loaded && map.getLayer(id)) {
           map.removeLayer(id);
         }
       };

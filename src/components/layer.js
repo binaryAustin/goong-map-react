@@ -127,7 +127,8 @@ function Layer(props) {
 
       return () => {
         map.off('styledata', forceUpdate);
-        if (map.style && map.style._loaded) {
+        // Check if layer exists before removing
+        if (map.style && map.style._loaded && map.getLayer(id)) {
           map.removeLayer(id);
         }
       };
