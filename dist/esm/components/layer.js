@@ -68,7 +68,7 @@ function diffLayerStyles(map, id, props, prevProps) {
   }
 }
 function createLayer(map, id, props) {
-  if (map.style && map.style._loaded) {
+  if (map.style && map.style._loaded && (!('source' in props) || map.getSource(props.source))) {
     var options = _objectSpread(_objectSpread({}, props), {}, {
       id: id
     });
