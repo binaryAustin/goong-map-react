@@ -90,7 +90,7 @@ function diffLayerStyles(map, id, props, prevProps) {
 }
 
 function createLayer(map, id, props) {
-  if (map.style && map.style._loaded) {
+  if (map.style && map.style._loaded && (!('source' in props) || map.getSource(props.source))) {
     const options = {...props, id};
     delete options.beforeId;
 
